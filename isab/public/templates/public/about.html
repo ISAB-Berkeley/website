@@ -1,0 +1,181 @@
+{% extends 'public/base.html' %} {% load staticfiles %} {% block title %}About{% endblock %}
+
+{% block content %}
+<div class="main-wrapper-mp oh">
+
+  <!-- Page Title -->
+  <section class="page-title style-2">
+    <div class="container relative clearfix">
+      <div class="title-holder">
+        <div class="title-text">
+          <h1>About Us</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end page title -->
+
+
+          <!-- standard post -->
+          <div class="entry-item">
+            <div class="entry-img">
+              <img src="{% static "img/isab_full.jpg" %}" alt="">
+            </div>
+          </div>
+
+
+  <!-- About us -->
+  <section class="section-wrap-mp">
+    <div class="container">
+      <div class="row mt-minus-30">
+
+        <div class="col-sm-12">
+          <div class="about-description mt-30">
+            <!-- <h4>Our Story</h4> -->
+            <p>
+              ISAB is the largest international students association at the UC Berkeley campus. It was established in 2009 and was nominated
+              as an outstanding student organization in 2010.
+            </p>
+            <p>
+              ISAB provides a positive intellectual and social atmosphere for students from diverse backgrounds. We host numerous events
+              to promote awareness of international culture to the campus community, whilst strengthening Berkeley's multicultural
+              community. ISAB has hundreds of general members, and along with our officer team, we have 6 core <a href="committees">committees</a>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end progress bars -->
+
+  <!-- Results -->
+  <section class="result-boxes">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-4 nopadding">
+          <div class="statistic result-box result-box-first">
+            <div class="result-wrap clearfix">
+              <i class="fa fa-globe"></i>
+              <span class="timer" data-from="0" data-to="24"></span>
+              <span class="counter-text">Countries</span>
+            </div>
+          </div>
+        </div>
+        <!-- end first result box -->
+
+        <div class="col-md-4 nopadding">
+          <div class="statistic result-box result-box-second">
+            <div class="result-wrap clearfix">
+              <i class="fa fa-users"></i>
+              <span class="timer" data-from="0" data-to="115"></span>
+              <span class="counter-text">General Members</span>
+            </div>
+          </div>
+        </div>
+        <!-- end second result box -->
+
+        <div class="col-md-4 nopadding">
+          <div class="statistic result-box result-box-third">
+            <div class="result-wrap clearfix">
+              <i class="fa fa-line-chart"></i>
+              <span class="timer" data-from="0" data-to="6"></span>
+              <span class="counter-text">Core Committees</span>
+            </div>
+          </div>
+        </div>
+        <!-- end third result box -->
+
+      </div>
+    </div>
+  </section>
+  <!-- end results-->
+
+  <!-- Clients -->
+  <section class="section-wrap clients bg-light">
+    <div class="container">
+
+      <div class="row heading">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="text-center bottom-line">Partnerships</h2>
+          <p class="subheading text-center">GLO, international office, etc</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 client-logo">
+          <a href="https://www.facebook.com/GLOLeadershipConference/">
+            <img src="{% static "img/glo_logo.png" %}" alt="" height="300" >
+          </a>
+        </div>
+        <div class="col-sm-4 client-logo">
+          <a href="https://isac.berkeley.edu/">
+            <img src="{% static "img/isac_logo.png" %}" alt="" height="300">
+          </a>
+        </div>
+        <div class="col-sm-4 client-logo">
+          <a href="https://asuc.org/">
+            <img src="{% static "img/asuc_logo.png" %}" alt="" height="300">
+          </a>
+        </div>
+      </div>
+      <div class="row second-row">
+        <div class="col-sm-4 client-logo">
+          <a href="https://career.berkeley.edu/">
+            <img src="{% static "img/cc_logo.png" %}" alt="" height="300">
+          </a>
+        </div>
+        <div class="col-sm-4 client-logo">
+          <a href="https://secondimpressions.berkeley.edu/">
+            <img src="{% static "img/sib.png" %}" alt="" height="300">
+          </a>
+        </div>
+        <div class="col-sm-4 client-logo">
+          <a href="http://www.berkeley.edu/">
+            <img src="{% static "img/berkeley.png" %}" alt="" height="300">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- end clients -->
+
+
+  <!-- Call to Action -->
+  <section class="call-to-action">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-9 col-xs-12">
+          <h2>Are you ready to join us?</h2>
+        </div>
+
+        <div class="col-md-3 col-xs-12 cta-button">
+          <a href="apply" class="btn btn-lg btn-color">Apply Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end call to action -->
+
+  <div id="back-to-top">
+    <a href="#top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+
+</div>
+<!-- end main-wrapper -->
+
+<!-- jQuery Scripts -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+{% endblock %}

@@ -1,0 +1,130 @@
+{% extends 'public/base.html' %} {% load staticfiles %} {% block title %} Contact {% endblock %} {% block content %}
+<!-- Contact -->
+<div class="main-wrapper-mp oh">
+
+    <!-- Page Title -->
+    <section class="page-title style-2">
+        <div class="container relative clearfix">
+            <div class="title-holder">
+                <div class="title-text">
+                    <h1>Contact</h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Pages</a>
+                        </li>
+                        <li class="active">
+                            Contact
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+
+    <section class="section-wrap-mp contact" id="contact">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h5>Get in Touch</h5>
+                    <p>Mon-Fri: 8:00 – 20:00</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="icon icon-Pointer"></i>
+                        </div>
+                        <h6>Address</h6>
+                        <p>MLK cubicle #
+                            <br>
+                        </p>
+                    </div>
+                    <!-- end address -->
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="icon icon-Mail"></i>
+                        </div>
+                        <h6>E-mail</h6>
+                        <a href="mailto:officers@isab.berkeley.edu">officers@isab.berkeley.edu</a>
+                    </div>
+                    <!-- end email -->
+
+                </div>
+
+                <div class="col-md-8">
+                    <form id="contact-form" action="#">
+
+                        <div class="row contact-row">
+                            <div class="col-md-6 contact-name">
+                                <input name="name" id="name" type="text" placeholder="Name*">
+                            </div>
+                            <div class="col-md-6 contact-email">
+                                <input name="mail" id="mail" type="email" placeholder="E-mail*">
+                            </div>
+                        </div>
+
+                        <input name="subject" id="subject" type="text" placeholder="Subject">
+                        <textarea name="comment" id="comment" placeholder="Message"></textarea>
+                        <input type="submit" class="btn btn-lg btn-color btn-submit" value="Send Message" id="submit-message">
+                        <div id="msg" class="message"></div>
+                    </form>
+                </div>
+                <!-- end col -->
+
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- Google Map -->
+    <div id="google-map" class="gmap" data-address="ASUC Student Union: Martin Luther King Jr. Building"></div>
+
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+<script type="text/javascript" src="{% static "js/gmap3.js" %}"></script>
+<!-- Google Map -->
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var gmapDiv = $("#google-map");
+        var gmapMarker = gmapDiv.attr("data-address");
+
+        gmapDiv.gmap3({
+            zoom: 16,
+            address: gmapMarker,
+            oomControl: true,
+            navigationControl: true,
+            scrollwheel: false,
+            styles: [
+                {
+                    "featureType": "all",
+                    "elementType": "all",
+                    "stylers": [
+                        { "saturation": "-70" }
+                    ]
+                }]
+        })
+            .marker({
+                address: gmapMarker,
+                icon: "{% static "img/map_pin.png" %}"
+            })
+            .infowindow({
+                content: "MLK Cubicle, Berkeley, Califronia"
+            })
+            .then(function (infowindow) {
+                var map = this.get(0);
+                var marker = this.get(1);
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+            });
+    });
+</script>
+{% endblock %}

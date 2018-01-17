@@ -1,0 +1,88 @@
+{% extends 'public/base.html' %} {% load staticfiles %}{% block title %}Events{% endblock %}
+
+{% block content %}
+<div class="main-wrapper-mp oh">
+
+    <!-- Page Title -->
+    <section class="page-title style-2">
+      <div class="container relative clearfix">
+        <div class="title-holder">
+          <div class="title-text">
+            <h1>Events</h1>
+          </div>
+        </div>
+      </div>
+    </section> <!-- end page title -->
+
+    <!-- Portfolio -->
+    <section class="section-wrap-mp pb-50">
+      <div class="container">
+
+        <div class="text-center">
+          <h1>Upcoming Events</h1>
+        </div>
+
+        <p>litlitlitltitajobsn;as</p>
+
+
+        <div class="text-center">
+          <br>
+          <h1>Past Events</h1>
+          <br>
+        </div>
+        <!-- filter -->
+        <div class="row"> 
+          <div class="col-md-12">
+            <div class="portfolio-filter">
+              <a href="#" class="filter active" data-filter="*">All</a>
+              <a href="#" class="filter" data-filter=".fall_2017">Fall 2017</a>
+              <a href="#" class="filter" data-filter=".spring_2017">Spring 2017</a>
+              <a href="#" class="filter" data-filter=".fall_2016">Fall 2016</a>
+              <a href="#" class="filter" data-filter=".spring_2016">Spring 2016</a>
+            </div>
+          </div>
+        </div> <!-- end filter -->
+
+        <div class="row">
+          <div class="works-grid titles">
+            {% if all_events %}
+              {% for event in all_events %}
+                <div class="col-md-4 col-xs-6 work-item {{ event.semester }}">
+                  <div class="work-container">
+                    <div class="work-img">
+                      <a href="/events/{{ event.id }}">
+                        <img src={{ event.facebook_link }} alt="">
+                      </a>
+                    </div>
+                    <div class="work-description">
+                      <h3><a href="/events/{{ event.id }}">{{ event.event_name }}</a></h3>
+                      <span><a href="/events/{{ event.id }}">{{ event.description }}</a></span>
+                    </div>
+                  </div> 
+                </div>
+              {% endfor %}
+            {% else %}
+              <p>No past events were found.</p>
+            {% endif %}
+          </div>
+        </div>    
+      </div>
+    </section> <!-- end portfolio-->
+
+    <div id="back-to-top">
+      <a href="#top"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+  </div> <!-- end main-wrapper -->
+  
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+{% endblock %}
+
+</html>
