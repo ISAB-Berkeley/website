@@ -11,4 +11,5 @@ urlpatterns = [
     path('tribute', views.tribute, name='tribute'),
     path('apply', views.apply, name='apply'),
     path('home', views.home, name='home'),
+    path('', views.home, name='home'),
 ]

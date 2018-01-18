@@ -46,12 +46,7 @@
     </div>
   </div>
 
-  {% url 'home' as home_url %}
-  {% if request.get_full_path == home_url %}
-    {% include "public/navigation_home.html" %}
-  {% else %}
-    {% include "public/navigation_other.html" %}
-  {% endif %}
+  {% include "public/navigation_home.html" %}
 
   {% block content %}{% endblock %}
 
