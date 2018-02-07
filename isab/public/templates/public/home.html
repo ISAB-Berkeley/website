@@ -1,126 +1,174 @@
+ {% extends 'public/base.html'%} {% load staticfiles %} {% block title %}Home{% endblock %} {% block content %}
+<!-- Video -->
+<section>
+    <div class="rev_slider_wrapper" data-alias="vimeo-hero">
+        <div class="rev_slider" id="slider3" data-version="5.0">
+            <ul>
+                <li data-fstransition="fade" data-transition="zoomout" data-easein="default" data-easeout="default" data-slotamount="1" data-masterspeed="1200"
+                    data-delay="8000" data-title="The Art of Design">
+                    <!-- MAIN IMAGE -->
+                    <img src="{% static " img/revolution/vimeobg.jpg " %}" alt="" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgparallax="7"
+                        class="rev-slidebg">
 
-{% extends 'public/base.html'%} {% load staticfiles %} {% block title %}Home{% endblock %} 
+                    <!-- BACKGROUND VIDEO LAYER -->
+                    <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-vimeoid="251625078" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;loop=1"
+                        data-videowidth="100%" data-videoheight="100%" data-videocontrols="none" data-videostartat="00:03" data-videoendat="01:53"
+                        data-videoloop="loop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"
+                        data-nextslideatend="true"></div>
 
-{% block content %}
-<div class="main-wrapper-mp oh">
+                    <!-- OVERLAY LAYER -->
+                    <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full"
+                        data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
+                        data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on"
+                        data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);">
+                    </div>
 
-    <section>
-        <div class="rev_slider_wrapper" data-alias="vimeo-hero">
-            <div class="rev_slider" id="slider3" data-version="5.0">
-                <ul>
-                    <li data-fstransition="fade" data-transition="zoomout" data-easein="default" data-easeout="default" data-slotamount="1" data-masterspeed="1200" data-delay="8000" data-title="The Art of Design">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/revolution/vimeobg.jpg" %}" alt="" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgparallax="7" class="rev-slidebg">
-    
-                        <!-- BACKGROUND VIDEO LAYER -->
-                        <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-vimeoid="251625078" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;loop=1"
-                            data-videowidth="100%" data-videoheight="100%" data-videocontrols="none" data-videostartat="00:03" data-videoendat="01:53"
-                            data-videoloop="loop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"
-                            data-nextslideatend="true"></div>
-    
-                        <!-- OVERLAY LAYER -->
-                        <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full"
-                            data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
-                            data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on"
-                            data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);">
-                        </div>
-    
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption hero-text giant_nocaps rs-parallaxlevel-3" data-x="left" data-y="center" data-voffset="-50" data-fontsize="[116,116,100,60]"
-                            data-transform_idle="o:1;s:1500;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.1;sY:0.1;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;"
-                            data-transform_out="opacity:0;sX:0;sY:0;s:2000;e:Power3.easeInOut;" data-start="1000" style="z-index: 6;">ISAB
-    
-                        </div>
-    
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption subheading_text rs-parallaxlevel-3" data-x="left" data-y="center" data-voffset="34" data-transform_idle="o:1;s:1000"
-                            data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
-                            data-start="1200" style="z-index: 7;">International Student Association at Berkeley
-                        </div>
-    
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-3" data-x="left" data-y="center" data-voffset="110" data-hoffset="0"
-                            data-transform_idle="o:1;s:700" data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;"
-                            data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;" data-start="1400" style="min-width: 140px; z-index:6;">
-                            <a href="http://vimeo.com/251625078" class="btn btn-md btn-white lightbox-video mfp-iframe">Play Full Video</a>
-                        </div>
-                    </li>
-                </ul>
-    
-                <div class="local-scroll">
-                    <a href="#services" class="scroll-down">
-                        <i class="fa fa-angle-down"></i>
-                    </a>
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption hero-text giant_nocaps rs-parallaxlevel-3" data-x="left" data-y="center" data-voffset="-50" data-fontsize="[116,116,100,60]"
+                        data-transform_idle="o:1;s:1500;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.1;sY:0.1;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;"
+                        data-transform_out="opacity:0;sX:0;sY:0;s:2000;e:Power3.easeInOut;" data-start="1000" style="z-index: 6;">ISAB
+
+                    </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption subheading_text rs-parallaxlevel-3" data-x="left" data-y="center" data-voffset="34" data-transform_idle="o:1;s:1000"
+                        data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                        data-start="1200" style="z-index: 7;">International Student Association at Berkeley
+                    </div>
+
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-3" data-x="left" data-y="center" data-voffset="110" data-hoffset="0"
+                        data-transform_idle="o:1;s:700" data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;"
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;" data-start="1400" style="min-width: 140px; z-index:6;">
+                        <a href="http://vimeo.com/251625078" class="btn btn-md btn-white lightbox-video mfp-iframe">Play Full Video</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="local-scroll">
+                <a href="#services" class="scroll-down">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Intro -->
+<section class="section-wrap intro" id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+                <h2 class="intro-heading heading-frame">Welcome to ISAB</h2>
+                <p class="intro-text mb-60">
+                        ISAB is the largest international students association at the UC Berkeley campus. It was established in 2009 and was nominated as an outstanding student organization in 2010-2017.
+                </p>
+                <img src="http://via.placeholder.com/190x190" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results -->
+<section class="result-boxes">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-4 nopadding">
+                <div class="statistic result-box result-box-first">
+                    <div class="result-wrap clearfix">
+                        <i class="icon icon-ChemicalGlass"></i>
+                        <span class="timer" data-from="0" data-to="1200"></span>
+                        <span class="counter-text">Design Experiments</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end first result box -->
+
+            <div class="col-md-4 nopadding">
+                <div class="statistic result-box result-box-second">
+                    <div class="result-wrap clearfix">
+                        <i class="icon icon-Cup"></i>
+                        <span class="timer" data-from="0" data-to="578"></span>
+                        <span class="counter-text">Awards Won</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end second result box -->
+
+            <div class="col-md-4 nopadding">
+                <div class="statistic result-box result-box-third">
+                    <div class="result-wrap clearfix">
+                        <i class="icon icon-Mail"></i>
+                        <span class="timer" data-from="0" data-to="12489"></span>
+                        <span class="counter-text">Messages Sent</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end third result box -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="section-wrap-mp services style-2 pb-40 pb-mdm-50" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 service-item">
+                <a>
+                    <i class="fa fa-connectdevelop"></i>
+                </a>
+                <div class="service-item-box">
+                    <h3>Connect</h3>
+                    <p>
+                        Connect with the international student community who share similar values.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 service-item">
+                <a>
+                    <i class="icon icon-Layers"></i>
+                </a>
+                <div class="service-item-box">
+                    <h3>Guide</h3>
+                    <p>
+                        Adjust to the Berkeley ecosystem with help from peers and guide others so they have a happier transition.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 service-item">
+                <a>
+                    <i class="icon icon-Eye"></i>
+                </a>
+                <div class="service-item-box">
+                    <h3>Grow</h3>
+                    <p>
+                        Spend quality time with the ISAB family, grow as a person and becoming a better version of yourself.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Our Services -->
-    <section class="section-wrap-mp services style-2 pb-40 pb-mdm-50" id="services">
-        <div class="container">
+<!-- Action -->
+<section class="call-to-action bg-light">
+    <div class="container">
+        <div class="row">
 
-            <div class="row">
-                <div class="col-md-4 service-item">
-                    <a href="#">
-                        <i class="icon icon-DesktopMonitor"></i>
-                    </a>
-                    <div class="service-item-box">
-                        <h3>Great Community</h3>
-                        <p>Our web design team will spend time with our digital marketing team to ensure the core principles
-                            of effective websites.
-                        </p>
-                    </div>
-                </div>
-                <!-- end service item -->
-
-                <div class="col-md-4 service-item">
-                    <a href="#">
-                        <i class="icon icon-Layers"></i>
-                    </a>
-                    <div class="service-item-box">
-                        <h3>Global Bullshit</h3>
-                        <p>Our web design team will spend time with our digital marketing team to ensure the core principles
-                            of effective websites.
-                        </p>
-                    </div>
-                </div>
-                <!-- end service item -->
-
-                <div class="col-md-4 service-item">
-                    <a href="#">
-                        <i class="icon icon-Eye"></i>
-                    </a>
-                    <div class="service-item-box">
-                        <h3>Best Friends</h3>
-                        <p>Our web design team will spend time with our digital marketing team to ensure the core principles
-                            of effective websites.
-                        </p>
-                    </div>
-                </div>
-                <!-- end service item -->
-
+            <div class="col-md-9 col-xs-12">
+                <h2>Have you Fallen In Love Already? Get Involved.</h2>
             </div>
-        </div>
-    </section>
-    <!-- end services -->
 
-    <!-- Call to Action -->
-    <section class="call-to-action bg-light">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-9 col-xs-12">
-                    <h2>Have you Fallen In Love Already? Get Involved.</h2>
-                </div>
-
-                <div class="col-md-3 col-xs-12 cta-button">
-                    <a href="/apply" class="btn btn-lg btn-color">Apply Now</a>
-                </div>
-
+            <div class="col-md-3 col-xs-12 cta-button">
+                <a href="/apply" class="btn btn-lg btn-color">Apply Now</a>
             </div>
+
         </div>
-    </section>
-    <!-- end call to action -->
+    </div>
+</section>
 {% endblock %}
