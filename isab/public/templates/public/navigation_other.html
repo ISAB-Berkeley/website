@@ -1,70 +1,67 @@
 {% load staticfiles %}
-<!-- Navigation -->
-<header class="nav-type-2">
-
+<header class="nav-type-2" id="home">
     <nav class="navbar navbar-static-top">
         <div class="navigation">
             <div class="container relative">
+                <form class="search-wrap" onsubmit="location.href='https://www.google.com/search?q=site%3Aisab.berkeley.edu+' + document.getElementById('question').value; return false;">
+                    <input id="question" type="search" class="form-control" placeholder="Type &amp; Hit Enter">
+                </form>
                 <div class="row">
-
                     <div class="navbar-header">
+                        <div class="logo-container">
+                            <div class="logo-wrap">
+                                <a href="/">
+                                    <img class="logo" src="{% static "img/isab_logo_black.png" %}" alt="logo">
+                                </a>
+                            </div>
+                        </div>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-
-                        <!-- Logo -->
-                        <div class="logo-container">
-                            <div class="logo-wrap local-scroll">
-                                <a href="/home">
-                                    <img class="logo" src="{% static "img/isab_logo_black.png" %}" alt="logo">
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                    <!-- end navbar-header -->
-
-
                     <div class="col-md-9 nav-wrap right">
                         <div class="collapse navbar-collapse" id="navbar-collapse">
-
                             <ul class="nav navbar-nav navbar-right">
-
-                                <li class="active">
-                                    <a href="/home">Home</a>
-                                </li>
                                 <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li {% if request.path == "/about" %}class="active"{% endif %}>
                                     <a href="/about">About</a>
                                 </li>
-                                <li>
+                                <li {% if request.path == "/committees" %}class="active"{% endif %}>
                                     <a href="/committees">Committees</a>
                                 </li>
-                                <li>
+                                <li {% if request.path == "/events" %}class="active"{% endif %}>
                                     <a href="/events">Events</a>
                                 </li>
-                                <!-- <li>
+                                <li {% if request.path == "/contact" %}class="active"{% endif %}>
                                     <a href="/contact">Contact</a>
-                                </li> -->
-                                <!-- <li>
-                                    <a href="/tribute">Tribute</a>
-                                </li> -->
-                                <li>
+                                </li>
+                                <li {% if request.path == "/apply" %}class="active"{% endif %}>
                                     <a href="/apply">Apply</a>
+                                </li>
+                                <li id="mobile-search">
+                                    <form method="get" class="mobile-search">
+                                        <input type="search" class="form-control" placeholder="Search...">
+                                        <button type="submit" class="search-button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-search">
+                                        <i class="fa fa-search search-trigger"></i>
+                                        <i class="fa fa-times search-close"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <!-- end col -->
                 </div>
-                <!-- end row -->
             </div>
-            <!-- end container -->
         </div>
-        <!-- end navigation -->
     </nav>
-    <!-- end navbar -->
-
 </header>
-<!-- end navigation -->

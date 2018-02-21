@@ -4,8 +4,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Event
 
-def home(request):
-    return render(request, 'public/home.html')
+def index(request):
+    return render(request, 'public/index.html')
 
 def about(request):
     return render(request, 'public/about.html')

@@ -46,7 +46,11 @@
     </div>
   </div>
 
-  {% include "public/navigation_home.html" %}
+  {% if request.path == "/" %}
+    {% include "public/navigation_home.html" %}
+  {% else %}
+    {% include "public/navigation_other.html" %}
+  {% endif %}
 
   <div class="main-wrapper-mp oh">
     {% block content %}{% endblock %}
