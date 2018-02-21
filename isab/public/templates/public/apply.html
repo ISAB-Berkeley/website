@@ -1,40 +1,50 @@
 {% extends 'public/base.html' %} {% load staticfiles %} {% block title %}Apply{% endblock %} {% block content %}
-<div class="main-wrapper-mp oh">
+<!-- Page Title -->
+<section class="page-title style-2">
+    <div class="container relative clearfix">
+        <div class="title-holder">
+            <div class="title-text">
+                <h1>Apply Now</h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="active">
+                        Apply
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <div class="main-wrapper-mp oh">
-
-        <!-- Page Title -->
-        <section class="page-title style-2">
-            <div class="container relative clearfix">
-                <div class="title-holder">
-                    <div class="title-text">
-                        <h1>General Member Applications for Spring '18 are still open!</h1>
-                    </div>
+<!-- 3 Columns -->
+<section class="section-wrap-mp pricing">
+    <div class="container">
+        <div class="row heading">
+            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                <h2 class="text-center bottom-line">Membership options</h2>
+                <p class="subheading text-center">Are you ready to join us?</p>
+            </div>
+        </div>
+        <div class="row mt-minus-30">
+            <div class="col-sm-12">
+                <div class="about-description mt-30">
+                <p>
+                    There are two main ISAB membership options. Browse our website before choosing which one to apply to.
+                </p>
+                <br>
                 </div>
             </div>
-        </section>
-        <!-- end page title -->
-
-        <!-- Pricing 3 Columns -->
-        <section class="section-wrap-mp pricing">
-            <div class="container">
-
-                <div class="row heading">
-                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                        <h2 class="text-center bottom-line">Membership options</h2>
-                        <p class="subheading text-center">Are you ready to join us?</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pricing-3-col wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <div class="pricing-title">
+                        <h3 style="margin-bottom:5px; margin-top:2px;">General Membership</h3>
+                        <p style="margin-bottom:0px;">Applications remain open throughout the semester</p>
                     </div>
-                </div>
-
-                <div class="row mt-minus-30">
-        
-                <div class="col-sm-12">
-                    <div class="about-description mt-30">
-                    <p>
-                        There are two main ISAB membership options. Browse our website before choosing which one to apply to.
-                    </p>
-                    <br>
-                    </div>
+<<<<<<< HEAD
                 </div>
         
                 </div>
@@ -90,39 +100,43 @@
                                 </a>
                             </div>
                         </div>
+=======
+                    <div class="pricing-features" style="padding:40px 40px 40px">
+                        <ul>
+                            <li>Assigned to a Family</li>
+                            <li>Low Commitment</li>
+                            <li>Limited Events</li>
+                        </ul>
                     </div>
-                    <!-- end col -->
-
+                    <div class="pricing-button">
+                        <a href="http://tinyurl.com/ISABfall17gm">
+                            <div class="btn btn-lg btn-color">Apply Now!</div>
+                        </a>
+>>>>>>> a56656790a0361c86775040e6b89ab49bcd2e6e6
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- end pricing 3 columns-->
-
-        <!-- Call to Action -->
-        <section class="call-to-action bg-light">
-            <div class="container">
-                <div class="row">
-                    <h2 class="text-center">Find us on <a href="https://www.facebook.com/isab.berkeley/">Facebook</a> for more updates</h2>
+            <div class="col-md-6">
+                <div class="pricing-3-col wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="pricing-title best-price">
+                        <h3 style="margin-bottom:5px; margin-top:2px;">Core Membership</h3>
+                        <p style="margin-bottom:0px;">Applications open until January 26th</p>
+                    </div>
+                    <div class="pricing-features" style="padding:40px 40px 40px">
+                        <ul>
+                            <li>Greater Responsibility</li>
+                            <li>Part of a Committee</li>
+                            <li>More events and tight knit community</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="https://bit.ly/ISABFall18Core">
+                            <div class="btn btn-lg btn-color">Apply Now!</div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- end call to action -->  
-
-        <div id="back-to-top">
-            <a href="#top">
-                <i class="fa fa-angle-up"></i>
-            </a>
         </div>
-
     </div>
-    <!-- end main-wrapper -->
-
-    <!-- jQuery Scripts -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-
-    </body>
-
-    {% endblock %}
+</section>
+{% endblock %}
