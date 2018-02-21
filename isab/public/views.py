@@ -26,8 +26,5 @@ def event(request, event_id):
 def contact(request):
     return render(request, 'public/contact.html')
 
-def tribute(request):
-    return render(request, 'public/tribute.html')
-
 def apply(request):
     return render(request, 'public/apply.html')
