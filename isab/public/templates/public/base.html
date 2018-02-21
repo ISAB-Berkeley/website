@@ -40,7 +40,7 @@
 <body style="font-family: 'Open Sans', sans-serif;">
 
   <!-- Preloader -->
-<div class="loader-mask">
+  <div class="loader-mask">
     <div class="loader">
       "Loading..."
     </div>
@@ -48,16 +48,13 @@
 
   {% include "public/navigation_home.html" %}
 
-  {% block content %}{% endblock %}
-
-  {% include "public/footer.html" %}
-
+  <div class="main-wrapper-mp oh">
+    {% block content %}{% endblock %}
+    {% include "public/footer.html" %}
     <div id="back-to-top">
       <a href="#top"><i class="fa fa-angle-up"></i></a>
     </div>
-
   </div>
-  <!-- end main-wrapper -->
 
   <!-- jQuery Scripts -->
   <script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
@@ -67,7 +64,6 @@
   <script type="text/javascript" src="{% static "revolution/js/jquery.themepunch.revolution.min.js" %}"></script>
   <script type="text/javascript" src="{% static "js/rev-slider.js" %}"></script>
   <script type="text/javascript" src="{% static "js/scripts.js" %}"></script>
-
 
   <script type="text/javascript" src="{% static "revolution/js/extensions/revolution.extension.video.min.js" %}"></script>
   <script type="text/javascript" src="{% static "revolution/js/extensions/revolution.extension.carousel.min.js" %}"></script>
