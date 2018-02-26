@@ -22,5 +22,6 @@
     ],
     "cSpell.words": [
         "ISAB"
-    ]
+    ],
+    "python.linting.enabled": false
 }
