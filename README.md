@@ -31,10 +31,20 @@ In the mysql terminal type the following command to create the `isab` database:
 ```
 CREATE DATABASE isab;
 ```
+Now head to the `isab/isab` directory and create a file called `secret.py` with contents:
+```
+DATABASE_HOST = '127.0.0.1'
+DATABASE_PORT = '3306'
+DATABASE_NAME = 'isab'
+DATABASE_USER = 'root'
+DATABASE_PASS = 'pass'
+```
 You are done. Now you can go back to the Django directory and run:
 ```
 pip3 install mysqlclient
+python3 manage.py makemigrations
 python3 manage.py migrate
+python3 manage.py runserver
 ```
 
 ## The template can be found [here](https://themeforest.net/item/enigma-creative-responsive-minimal-html-template/12271889).
