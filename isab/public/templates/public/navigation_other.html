@@ -34,7 +34,7 @@
                                 <li {% if request.path == "/committees" %}class="active"{% endif %}>
                                     <a href="/committees">Committees</a>
                                 </li>
-                                <li {% if request.path == "/events" %}class="active"{% endif %}>
+                                <li {% if "event" in request.path %}class="active"{% endif %}>
                                     <a href="/events">Events</a>
                                 </li>
                                 <li {% if request.path == "/contact" %}class="active"{% endif %}>

@@ -25,8 +25,7 @@ SECRET_KEY = 'ldn=hagb=%xd$b4i!!)va-)%w9fcpqo931h3*!3b*!$id^gd8%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1', 'isab-berkeley-edu.apphost.ocf.berkeley.edu']
 
 # Application definition
 
@@ -123,6 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_ROOT = 'public/static/img/'
 MEDIA_URL = '/public/static/img/'

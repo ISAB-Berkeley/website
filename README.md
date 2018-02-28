@@ -22,7 +22,8 @@ Start the server using the command:
 ```
 sudo /usr/local/mysql/support-files/mysql.server start
 ```
-Connect to the mysql client using the command, and enter the default password:
+Connect to the mysql client using the command, and enter the default password:  
+(If you forgot to note down the mysql default password follow [these steps](https://stackoverflow.com/a/22851247/3531663).)
 ```
 mysql -u root -p
 ```
