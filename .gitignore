@@ -2,6 +2,7 @@ isab/run
 isab/static/
 isab/public/migrations/
 isab/isab/secret.py
+isab/public/static/img/events/
 
 # Created by https://www.gitignore.io/api/macos,linux,django,intellij,visualstudiocode
 
