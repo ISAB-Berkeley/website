@@ -38,6 +38,8 @@ DATABASE_PORT = '3306'
 DATABASE_NAME = 'isab'
 DATABASE_USER = 'root'
 DATABASE_PASS = 'pass'
+EMAIL_USER = 'tech@isab.berkeley.edu'
+EMAIL_PASS = 'pass'
 ```
 You are done. Now you can go back to the Django directory and run:
 ```
