@@ -90,6 +90,14 @@ DATABASES = {
     }
 }
 
+# E-Mail
+
+EMAIL_HOST = 'smtp.ocf.berkeley.edu'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = EMAIL_USER
+EMAIL_HOST_PASSWORD = EMAIL_PASS
+EMAIL_CONTACT_TARGET = 'officers@isab.berkeley.edu'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
