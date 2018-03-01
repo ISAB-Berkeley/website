@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from .secret import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,8 +26,12 @@ SECRET_KEY = 'ldn=hagb=%xd$b4i!!)va-)%w9fcpqo931h3*!3b*!$id^gd8%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'isab.berkeley.edu',
+    'www.ocf.berkeley.edu/~isab',
+    'isab-berkeley-edu.apphost.ocf.berkeley.edu'
+]
 
 # Application definition
 
@@ -77,11 +82,11 @@ WSGI_APPLICATION = 'isab.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'isab',
-        'USER': 'root',
-        'PASSWORD': 'pass',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': DATABASE_NAME,
+        'USER': DATABASE_USER,
+        'PASSWORD': DATABASE_PASS,
+        'HOST': DATABASE_HOST,
+        'PORT': DATABASE_PORT,
     }
 }
 
@@ -123,6 +128,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_ROOT = 'public/static/img/'
 MEDIA_URL = '/public/static/img/'
