@@ -1,0 +1,37 @@
+{% extends 'public/base.html' %} {% load staticfiles %} {% block title %}404 Page{% endblock %}{% block content %}
+<!-- Page Title -->
+<section class="page-title style-2">
+    <div class="container relative clearfix">
+        <div class="title-holder">
+        <div class="title-text">
+            <h1>404 Page</h1>
+            <ol class="breadcrumb">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li class="active">
+                404 Page
+            </li>
+            </ol>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- 404-->
+<section class="section-wrap page-404">
+    <div class="container">
+        <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+            <h1>404</h1>
+            <h2 class="mb-50">Page Not Found</h2>
+            <p class="mb-20">You can go back to the <a href="/">Homepage</a> or use search</p>
+            <form class="relative" onsubmit="location.href='https://www.google.com/search?q=site%3Aisab.berkeley.edu+' + document.getElementById('question').value; return false;">
+                <input id="question" type="search" placeholder="Search">
+                <button type="submit" class="search-button"><i class="icon icon_search"></i></button>
+            </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
