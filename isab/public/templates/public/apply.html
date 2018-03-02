@@ -1,14 +1,21 @@
 {% extends 'public/base.html' %} {% load staticfiles %} {% block title %}Apply{% endblock %} {% block content %}
 <!-- Page Title -->
-<body background = Vector Shape World Map.psd> 
 <section class="page-title style-2">
-    <div class="container relative clearfix">
-        <div class="title-holder">
-            <div class="title-text">
-                <h1>General Member Applications for Spring '18 are still open!</h1>
-            </div>
-        </div>
+  <div class="container relative clearfix">
+    <div class="title-holder">
+      <div class="title-text">
+        <h1>Apply Now</h1>
+        <ol class="breadcrumb">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li class="active">
+            Apply
+          </li>
+        </ol>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Alert Box -->
@@ -18,215 +25,105 @@
       <div class="col-md-12">
         <div class="alert alert-success fade in alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <strong>Hello!</strong> Applications are still open.
+          <strong>Hey!</strong> General Member Applications for Spring '18 are still open.
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Pricing 3 Columns -->
-<section class="section-wrap-mp pricing">
-    <div class="container">
-
-        <div class="row heading">
-            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                <h2 class="text-center bottom-line">Membership options</h2>
-                <p class="subheading text-center">Are you ready to join us?</p>
-            </div>
-        </div>
-
-        <div class="row mt-minus-30">
-
-        <div class="col-sm-12">
-            <div class="about-description mt-30">
-            <p>
-                <h3 class ="text-center">There are two main ISAB membership options. Browse our website before choosing which one to apply to.</h3>
-            </p>
-            <br>
-            </div>
-        </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="pricing-3-col wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                    <div class="pricing-title">
-                        <h3 style="margin-bottom:5px; margin-top:2px;">General Membership</h3>
-                        <p style="margin-bottom:0px;">Applications remain open throughout the semester</p>
-                    </div>
-
-                    <div class="pricing-features" style="padding:40px 40px 40px">
-                        <ul>
-                            <li>Sorted into a Family</li>
-                            <li>Low Commitment</li>
-                            <li>Cool events such as Bowling night</li>
-                            <li>Kickbacks for multicultural bonding</li>
-                            <li>Bay Area related events</li>
-                            <li>Social and Professional Events</li>
-                            <li>Meet Fellow International Students</li>
-                        </ul>
-                    </div>
-
-                    <div class="pricing-button">
-                        <a href="http://tinyurl.com/ISABfall17gm">
-                            <div class="btn btn-lg btn-color">Apply Now!</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- end col -->
-
-            <div class="col-md-6">
-                <div class="pricing-3-col wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="pricing-title best-price">
-                        <h3 style="margin-bottom:5px; margin-top:2px;">Core Membership</h3>
-                        <p style="margin-bottom:0px;">Applications open until January 26th</p>
-                    </div>
-
-                    <div class="pricing-features" style="padding:40px 40px 40px">
-                        <ul>
-                            <li>Greater Responsibility</li>
-                            <li>Part of a Committee</li>
-                            <li>More events and tight knit community</li>
-                            <li>Night outs on a Yatch</li>
-                            <li>Professional Development</li>
-                            <li>Weekend retreats to chosen locales</li>
-                            <li>Social and Professional Events</li>
-                        </ul>
-                    </div>
-
-                    <div class="pricing-button">
-                        <a href="https://bit.ly/ISABFall18Core">
-                            <div class="btn btn-lg btn-color">Apply Now!</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- end col -->
-
-        </div>
-    </div>
-</section
-
-
-
-
-
-
-<section class="section-wrap-mp pricing">
-      <div class="container">
-
-        <div class="row heading">
-          <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-            <h2 class="text-center bottom-line">MEMBERSHIP DUES</h2>
-            <p class="subheading text-center">Make Memories With Us</p>
-          </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col-md-4">        
-            <div class="pricing-3-col">
-              <div class="pricing-title best-price">
-                <h3>Core</h3>
-                <div class="pricing-price">
-                  <span class="pricing-currency">TBD</span>
-                  <span class="pricing-term">TBD</span>
-                </div>                  
-              </div>
-
-              <div class="pricing-features">
-                <ul>
-                  <li></li>
-                  <li>Events Organizing & Planning</li>
-                  <li>Unparalleled Alumni base</li>
-                  <li>Networking Opportunities</li>
-                  <li>Yatch nights on the Bay</li>
-                  <li>Expand your friend-group</li>
-                </ul>
-              </div>
-
-              <div class="pricing-button">
-                <a href="https://bit.ly/ISABFall18Core">
-                  <div class="btn btn-lg btn-color">APPLY NOW!</div>
-                </a>
-              </div>
-            </div>
-          </div> <!-- end col -->
-
-          <div class="col-md-4">        
-            <div class="pricing-3-col last">
-              <div class="pricing-title">
-                <h3>General</h3>
-                <div class="pricing-price">
-                  <span class="pricing-currency">$10</span>
-                  <span class="pricing-term">Per Year</span>
-                </div>                  
-              </div>
-
-              <div class="pricing-features">
-                <ul>
-                  <li></li>
-                  <li>Fun with Amazing Friends</li>
-                  <li>Professional Development</li>
-                  <li>A home away from home</li>
-                  <li>Awesome experiences</li>
-                  <li>Shared Friendship</li>
-                </ul>
-              </div>
-
-              <div class="pricing-button">
-                <a href="http://tinyurl.com/ISABfall17gm">
-                  <div class="btn btn-lg btn-color">APPLY NOW!</div>
-                </a>
-              </div>
-            </div>
-          </div> <!-- end col -->
-
-
-          <div class="col-md-4">        
-            <div class="pricing-3-col last">
-              <div class="pricing-title">
-                <h3>PROCESS</h3>
-                <div class="pricing-price">
-                  <span class="pricing-currency">FREE</span>
-                  <span class="pricing-term">Per Year</span>
-                </div>                  
-              </div>
-
-              <div class="pricing-features">
-                <ul>
-                  <li></li>
-                  <li>Follow our Insta</li>
-                  <li>Follow us on Facebook</li>
-                  <li>Come to our Info Session</li>
-                  <li>Watch out for the application</li>
-                  <li>Fill it in, and submit!</li>
-                </ul>
-              </div>
-              <div class="pricing-button">
-                <a href="http://tinyurl.com/ISABfall17gm">
-                  <div class="btn btn-lg btn-color">APPLY NOW!</div>
-                </a>
-              </div>
-            </div>
-          </div> <!-- end col -->
-
+<!-- Text -->
+<section class="section-wrap-mp pt-20 pb-0">
+  <div class="container">
+    <div class="row mt-minus-30">
+      <div class="col-sm-12">
+        <div class="about-description mt-30">
+          <p><span class="dropcap style-2">T</span>
+          here are two main ISAB membership options: core membership or general membership.  Browse our website before choosing which one to apply to. Core members constitute a small group (less than 30) and are a fundamental part of ISAB. They run the events and are responsible of making the club tick. General members are international (and non-international) students that want to have a multicultural experience during their time at Berkeley. They attend events and make friends!
+          </p>
         </div>
       </div>
-    </section> <!-- end pricing 3 columns-->
+    </div>
+  </div>
+</section>
+
+<!-- Membership Options -->
+<section class="section-wrap-mp pricing">
+  <div class="container">
+    <div class="row heading">
+      <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+        <h2 class="text-center bottom-line">Membership Options</h2>
+        <p class="subheading text-center">Are you ready to join us?</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">        
+        <div class="pricing-3-col wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+          <div class="pricing-title">
+            <h3>General Membership</h3>
+            <div class="pricing-price">
+              <span class="pricing-currency">$10</span>
+              <span class="pricing-term">Per Semester</span>
+            </div>                  
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li></li>
+              <li></li>
+              <li>Assigned to a Family</li>
+              <li>Low Commitment</li>
+              <li>Social and Professional Events</li>
+              <li>Meet Fellow International Students</li>
+              <li>Fun Events Such as Bowling</li>
+              <li>A Home Away From Home</li>
+            </ul>
+          </div>
+          <div class="pricing-button">
+            <a href="https://tinyurl.com/ISABfall17gm">
+              <div class="btn btn-lg btn-color">Apply Now</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">        
+        <div class="pricing-3-col wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="pricing-title best-price">
+            <h3>Core Membership</h3>
+            <div class="pricing-price">
+              <span class="pricing-currency">FREE</span>
+              <span class="pricing-term">To Apply</span>
+            </div>                  
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li></li>
+              <li></li>
+              <li>Greater Responsibility</li>
+              <li>Committee Involvement</li>
+              <li>Retreat and Banquet</li>
+              <li>Tight Knit Community</li>
+              <li>Leadership Opportunities</li>
+              <li>Connect with Alumni</li>
+            </ul>
+          </div>
+          <div class="pricing-button">
+            <a href="#">
+              <div class="btn btn-lg btn-color">Applications Closed :(</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Call to Action -->
 <section class="call-to-action bg-light">
-    <div class="container">
-        <div class="row">
-            <h2 class="text-center">Find us on <a href="https://www.facebook.com/isab.berkeley/">Facebook</a> for more updates</h2>
-            <h2 class="text-center">Find us on  <a href="https://www.instagram.com/isab.cal/"> Instagram
-                                    <i class="fa fa-instagram"></i>
-                                </a></h2>
-        </div>
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">Visit our <a href="https://www.facebook.com/isab.berkeley/">official Facebook page</a> for more updates</h2>
     </div>
+  </div>
 </section>
 <body>
 {% endblock %}
