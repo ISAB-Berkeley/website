@@ -52,6 +52,7 @@ def contact(request):
                 errors.append("Could not send your message at this time.")
             else:
                 success = True
+                form = ContactForm()
         else:
             for field in form:
                 for error in field.errors:
