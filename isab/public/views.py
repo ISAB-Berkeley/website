@@ -20,9 +20,9 @@ def committees(request):
 
 def events(request):
     semesters = Semester.objects.all()
-    sorted_semesters = sorted(semesters, key=lambda s: s.value())
+    sorted_semesters = sorted(semesters, key=lambda s: s.value(), reverse=True)
     events = Event.objects.all()
-    sorted_events = events.order_by('date')
+    sorted_events = events.order_by('-date')
     context = {'events': sorted_events, 'semesters': sorted_semesters}
     return render(request, 'public/events.html', context)
 
