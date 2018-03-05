@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.conf import settings
-from django.http import HttpResponse
+from django.http import Http404
 from django.shortcuts import render
 from django.core.mail import EmailMessage
-from django.shortcuts import render_to_response
-from django.template import RequestContext
 from .models import Event, Semester
 from .forms import ContactForm
 
@@ -27,7 +25,10 @@ def events(request):
     return render(request, 'public/events.html', context)
 
 def event(request, event_id):
-    event = Event.objects.filter(id=event_id)[0]
+    result = Event.objects.filter(id=event_id)
+    if not result:
+        raise Http404("Event does not exist")
+    event = result[0]
     images = event.images.all()
     context = {'event': event, 'images': images}
     return render(request, 'public/event.html', context)
@@ -68,8 +69,3 @@ def contact(request):
 
 def apply(request):
     return render(request, 'public/apply.html')
-
-def handler404(request, exception, template_name='404.html'):
-    response = render_to_response('public/404.html', {}, context_instance=RequestContext(request))
-    response.status_code = 404
-    return response

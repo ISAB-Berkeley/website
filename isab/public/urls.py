@@ -1,5 +1,4 @@
 from django.urls import path
-from django.conf.urls import handler404
 
 from . import views
 
@@ -12,5 +11,3 @@ urlpatterns = [
     path('apply', views.apply, name='apply'),
     path('', views.index, name='index'),
 ]
-
-handler404 = views.handler404
