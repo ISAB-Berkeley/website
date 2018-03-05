@@ -25,7 +25,7 @@ class Semester(models.Model):
     
     def value(self):
         tokens = self.name.split(" ", 1)
-        semester_value = 0 if tokens[0].lower() == "fall" else 5
+        semester_value = 0 if tokens[0].lower() == "spring" else 5
         return int(tokens[1]) * 10 + semester_value
 
 class Event(models.Model):
