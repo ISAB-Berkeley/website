@@ -44,8 +44,8 @@
                                     <a href="/apply">Apply</a>
                                 </li>
                                 <li id="mobile-search">
-                                    <form method="get" class="mobile-search">
-                                        <input type="search" class="form-control" placeholder="Search...">
+                                    <form class="mobile-search" onsubmit="location.href='https://www.google.com/search?q=site%3Aisab.berkeley.edu+' + document.getElementById('question-mobile').value; return false;">
+                                        <input id="question-mobile" type="search" class="form-control" placeholder="Search...">
                                         <button type="submit" class="search-button">
                                             <i class="fa fa-search"></i>
                                         </button>

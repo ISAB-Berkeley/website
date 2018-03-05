@@ -1,4 +1,4 @@
-# ISAB Website 2017
+# ISAB Website 2017-2018
 
 ___
 
@@ -40,11 +40,19 @@ DATABASE_USER = 'root'
 DATABASE_PASS = 'pass'
 EMAIL_USER = 'tech@isab.berkeley.edu'
 EMAIL_PASS = 'pass'
+S_SECRET_KEY = 'abc'
+S_DEBUG = True
 ```
+Make sure you update the following:
+* replace `DATABASE_PASS` with your mysql password
+* replace `EMAIL_PASS` with the password you find the the ISAB Tech folder on BDrive
+* generate new `S_SECRET_KEY` using [this website](https://www.miniwebtool.com/django-secret-key-generator/)
+
 You are done. Now you can go back to the Django directory and run:
 ```
 pip3 install mysqlclient
 python3 manage.py makemigrations
+python3 manage.py makemigrations public
 python3 manage.py migrate
 python3 manage.py runserver
 ```
