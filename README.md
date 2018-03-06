@@ -33,6 +33,8 @@ CREATE DATABASE isab;
 ```
 Now head to the `isab/isab` directory and create a file called `secret.py` with contents:
 ```
+import os
+
 DATABASE_HOST = '127.0.0.1'
 DATABASE_PORT = '3306'
 DATABASE_NAME = 'isab'
@@ -42,6 +44,10 @@ EMAIL_USER = 'tech@isab.berkeley.edu'
 EMAIL_PASS = 'pass'
 S_SECRET_KEY = 'abc'
 S_DEBUG = True
+S_STATIC_URL = '/static/'
+S_STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+S_MEDIA_ROOT = 'public/static/img/'
+S_MEDIA_URL = '/public/static/img/'
 ```
 Make sure you update the following:
 * replace `DATABASE_PASS` with your mysql password
