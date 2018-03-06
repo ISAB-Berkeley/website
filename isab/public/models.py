@@ -40,7 +40,7 @@ class Event(models.Model):
     cover = models.ImageField(upload_to=image_folder)
 
     def __str__(self):
-        return str(semester) + " " + self.name
+        return str(self.semester) + " - " + self.name
 
     @property
     def short(self):
