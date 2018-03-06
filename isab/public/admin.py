@@ -11,7 +11,7 @@ from .models import Semester
 
 class EventImageInline(admin.TabularInline):
     model = EventImage
-    extra = 3
+    extra = 20
 
 class EventAdmin(admin.ModelAdmin):
     inlines = [EventImageInline,]
