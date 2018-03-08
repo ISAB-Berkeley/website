@@ -48,6 +48,7 @@ S_STATIC_URL = '/static/'
 S_STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 S_MEDIA_ROOT = 'public/static/img/'
 S_MEDIA_URL = '/public/static/img/'
+S_MAINTENANCE_MODE = False
 ```
 Make sure you update the following:
 * replace `DATABASE_PASS` with your mysql password

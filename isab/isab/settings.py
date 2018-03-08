@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'public',
+    'maintenance_mode',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'maintenance_mode.middleware.MaintenanceModeMiddleware',
 ]
 
 ROOT_URLCONF = 'isab.urls'
@@ -144,3 +146,4 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 SECURE_SSL_REDIRECT = not S_DEBUG
 SESSION_COOKIE_SECURE = not S_DEBUG
 CSRF_COOKIE_SECURE = not S_DEBUG
+MAINTENANCE_MODE = S_MAINTENANCE_MODE
