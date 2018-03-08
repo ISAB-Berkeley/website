@@ -1,3 +1,4 @@
+venv/
 isab/run
 isab/static/
 isab/public/migrations/
