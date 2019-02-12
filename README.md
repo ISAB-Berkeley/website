@@ -75,6 +75,8 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
+The local website should now be accesible using your browser.
+
 ## Server Side
 
 Below are some commands which can come handy when you SSH into the web hosting machine.
