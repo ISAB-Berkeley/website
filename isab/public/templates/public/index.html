@@ -1,62 +1,122 @@
  {% extends 'public/base.html'%} {% load staticfiles %} {% block title %}Home{% endblock %} {% block content %}
 <!-- Video -->
 
-<!-- <section>
+<!-- Revolution Slider -->
+<section> 
     <div class="rev_slider_wrapper" data-alias="vimeo-hero">
         <div class="rev_slider" id="slider3" data-version="5.0">
-            <ul>
-                <li data-fstransition="fade" data-transition="zoomout" data-easein="default" data-easeout="default" data-slotamount="1" data-masterspeed="1200"
-                    data-delay="8000" data-title="The Art of Design"> -->
-                    <!-- MAIN IMAGE -->
-                    <!-- <img src="{% static "img/video_placeholder.png" %}" alt="" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgparallax="7"
-                        class="rev-slidebg"> -->
+        <ul>
+            <li data-fstransition="fade"
+            data-transition="zoomout"
+            data-easein="default" 
+            data-easeout="default"
+            data-slotamount="1"
+            data-masterspeed="1200"
+            data-delay="8000"
+            data-title="ISAB"
+            >
 
-                    <!-- BACKGROUND VIDEO LAYER -->
-                    <!-- <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-vimeoid="251625078" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;loop=1"
-                        data-videowidth="100%" data-videoheight="100%" data-videocontrols="none" data-videostartat="00:03" data-videoendat="01:53"
-                        data-videoloop="loop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"
-                        data-nextslideatend="true"></div> -->
+            <!-- MAIN IMAGE -->
+            <img src="{% static "img/video_placeholder.png" %}"
+                alt=""
+                data-bgrepeat="no-repeat"
+                data-bgfit="cover"
+                data-bgparallax="7"
+                class="rev-slidebg"
+                >
 
-                    <!-- OVERLAY LAYER -->
-                    <!-- <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full"
-                        data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;"
-                        data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on"
-                        data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);">
-                    </div> -->
+            <!-- BACKGROUND VIDEO LAYER -->
+            <div class="rs-background-video-layer" 
+                data-forcerewind="on" 
+                data-volume="mute" 
+                data-vimeoid="251625078"
+                data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1&amp;loop=1"
+                data-videowidth="100%" 
+                data-videoheight="100%" 
+                data-videocontrols="none" 
+                data-videostartat="00:03" 
+                data-videoendat="01:53" 
+                data-videoloop="loop" 
+                data-forceCover="1"
+                data-aspectratio="16:9" 
+                data-autoplay="true" 
+                data-autoplayonlyfirsttime="false" 
+                data-nextslideatend="true" 
+            ></div>
 
-                    <!-- LAYER NR. 1 -->
-                    <!-- <div class="tp-caption hero-text giant_nocaps rs-parallaxlevel-3" data-x="['left','center','center','center']" data-y="center" data-voffset="['-50', '-50', '-30', '-30']" data-hoffset="-10" data-fontsize="[116,116,100,100]"
-                        data-transform_idle="o:1;s:1500;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.1;sY:0.1;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;"
-                        data-transform_out="opacity:0;sX:0;sY:0;s:2000;e:Power3.easeInOut;" data-start="1000" style="z-index: 6;">ISAB
-                    </div> -->
-
-                    <!-- LAYER NR. 2 -->
-                    
-                    <!-- <div class="tp-caption subheading_text rs-parallaxlevel-3" data-x="['left','center','center','center']" data-y="center" data-voffset="34" data-xoffset="10" data-transform_idle="o:1;s:1000"
-                        data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
-                        data-start="1200" style="z-index: 7;">International Students Association at Berkeley
-                    </div>
- -->
-                    <!-- LAYER NR. 3 -->
-
-                    <!--
-                    <div class="tp-caption tp-resizeme rs-parallaxlevel-3" data-x="['left','center','center','center']" data-y="center" data-voffset="110" data-hoffset="0"
-                        data-transform_idle="o:1;s:700" data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;"
-                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;" data-start="1400" style="min-width: 140px; z-index:6;">
-                        <a href="https://vimeo.com/251625078" class="btn btn-md btn-white lightbox-video mfp-iframe">Play Full Video</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="local-scroll">
-                <a href="#intro" class="scroll-down">
-                    <i class="fa fa-angle-down"></i>
-                </a>
+            <!-- OVERLAY LAYER -->
+            <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0"
+                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                data-width="full"
+                data-height="full"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                data-transform_out="s:300;s:300;" 
+                data-start="750" 
+                data-basealign="slide" 
+                data-responsive_offset="on" 
+                data-responsive="off"
+                style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> 
             </div>
+
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption hero-text giant_nocaps rs-parallaxlevel-3"
+                data-x="center"
+                data-y="center"
+                data-voffset="[0,0,0,-10]"
+                data-fontsize="[116,116,100,50]"
+                data-textAlign="center"
+                data-width="[none, none, none, 400]"
+                data-whitespace="[nowrap, nowrap, nowrap, normal]"
+                data-lineheight="[116,116,100,50]"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.1;sY:0.1;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:2000;e:Power3.easeInOut;"
+                data-start="1000"
+                style="z-index: 6;">ISAB
+
+            </div>
+            
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption subheading_text rs-parallaxlevel-3"
+                data-x="center"
+                data-y="center"
+                data-voffset="[84,84,84,50]"
+                data-transform_idle="o:1;s:1000"
+                data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;"
+                data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                data-start="1200"
+                style="z-index: 7;">International Students Association at Berkeley
+            </div>
+
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption tp-resizeme rs-parallaxlevel-3"
+                data-x="center"
+                data-y="center"
+                data-voffset="[160,160,150,120]"
+                data-hoffset="0"
+                data-transform_idle="o:1;s:700"
+                data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:1000;"
+                data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                data-start="1400"
+                style="min-width: 140px; z-index:6;"><a href="http://vimeo.com/82642494" class="btn btn-md btn-white lightbox-video mfp-iframe">Play Full Video</a>
+            </div>
+        
+            </li>
+
+        </ul>
+
+        <div class="local-scroll">
+            <a href="#intro" class="scroll-down">
+            <i class="fa fa-angle-down"></i>
+            </a>
+        </div>
+
         </div>
     </div>
 </section>
--->
 
 <!-- Intro -->
 <section class="section-wrap intro" id="intro">
