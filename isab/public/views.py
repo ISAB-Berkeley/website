@@ -16,9 +16,6 @@ def about(request):
 def committees(request):
     return render(request, 'public/committees.html')
 
-def qanda(request):
-    return render(request, 'public/qanda.html')
-
 def events(request):
     semesters = Semester.objects.all()
     sorted_semesters = sorted(semesters, key=lambda s: s.value(), reverse=True)
