@@ -19,12 +19,27 @@
 </section>
 
 <form>
-  Name:<br>
-   <input type="text" name="name"><br>
-  question:<br>
+  Name:
+  <br>
+  <input type="text" name="name"><br>
+  Question:
+  <br>
   <input type="text" name="question">
 </form>
 
+
+<input type="text" name="enter" class="enter" value="" id="lolz"/>
+<input type="button" value="click" id="kk" />
+
+<script> 
+$(document).ready(function() {
+    var lolz = $('#lolz');
+    var kk = $('#kk');
+    kk.click(function() {
+        alert(lolz.val());
+    });
+});  
+</script>
 
 <!-- Call to Action -->
 <section class="call-to-action bg-light">
