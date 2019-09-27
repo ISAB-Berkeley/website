@@ -21,17 +21,17 @@
 <form>
   Name:
   <br>
-  <input type="text" name="name" class="enter" value="" id="username"><br>
+  <input type="text" name="name" value="" id="username"><br>
   Question:
   <br>
-  <input type="text" name="question" class="enter" value="" id="question">
+  <input type="text" name="question" value="" id="test_question">
 </form>
 
 <input type="button" value="click" OnClick="kk()"/>
 
 <script type="text/javascript">
    var user_name = document.getElementById('username');
-   var user_question = document.getElementById('question');
+   var user_question = document.getElementById('test_question');
    function kk() {
        alert(user_name.value + " asked " + user_question.value);
        alert(user_question.value);
