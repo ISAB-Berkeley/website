@@ -27,21 +27,14 @@
   <input type="text" name="question">
 </form>
 
-
 <input type="text" name="enter" class="enter" value="" id="lolz"/>
-<input type="button" value="click" id="kk" />
+<input type="button" value="click" OnClick="kk()"/>
 
-<script> 
-$(document).ready(function() {
-    alert("JS 1 working");
-    var lolz = $('#lolz');
-    alert("JS 2 working");
-    var kk = $('#kk');
-    kk.click(function() {
-        alert("kk working");
-        alert(lolz.val());
-    });
-});  
+<script type="text/javascript">
+   var lol = document.getElementById('lolz');
+   function kk() {
+       alert(lol.value);
+   }
 </script>
 
 <!-- Call to Action -->
