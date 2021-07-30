@@ -1,4 +1,4 @@
-{% extends 'public/base.html' %} {% load staticfiles %} {% block title %}Commitees{% endblock %} {% block content %}
+{% extends 'public/base.html' %} {% load static %} {% block title %}Commitees{% endblock %} {% block content %}
 <!-- Page Title -->
 <section class="page-title style-2">
     <div class="container relative clearfix">
@@ -30,12 +30,12 @@
         </div>
 
         <div class="col-sm-10 col-sm-offset-1 wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0s">
-            <img src="{% static "img/people/core2019_group.png" %}" alt="2019 officers" />
+            <img src="{% static "img/black.jpg" %}" alt="2019 officers" />
             <div class="row heading">
             </div>
 
             <p class="intro-text mb-60">
-                ISAB Core consists of 8 committees, with each committee handling and organizing their own set of social or professional events. The committees are divided into three main sections: Internal, External and Operations.
+                ISAB Core consists of 7 committees, with each committee handling and organizing their own set of social or professional events. The committees are divided into three main sections: Internal, External and Operations.
                 <br/><br/><b>The External division</b> consists of three committees: <b>External Events, International Programs</b> and <b>Marketing</b>. These committees plan social and professional events and handle the outreach for the greater Berkeley community.
                 <br/><br/><b>The Internal division</b> consists of two committees: <b>Social</b> and <b>Collaborative Events</b>. These committees handle all the internal social events for the club, both for the core and general members.
                 <br/><br/><b>The Operations division</b> consists three committees: <b>Historian, Associate of Operations</b> and <b>Technology</b>. These committees are responsible for the logistics of the club such as inventory and finances, as well as documenting our events and keeping the website updated.
@@ -52,9 +52,8 @@
                             <i class="fa fa-cloud hi-icon"></i>
                         </a>
                         <div class="features-text">
-                            <h6>Associate of Operation</h6>
-                            <p>The Associate of Operations Committee is responsible in assisting with the operations of ISAB. From managing inventory, meeting minutes, assisting in finances, AO aims to ensure that the
-                                various other committees of ISAB can put forth their best work possible.
+                            <h6>Social Media Committee</h6>
+                            <p>The Social Media Committee oversees and organizes the content used on ISAB’s social media platforms. The committee focuses on advertising all ISAB events and providing insight on international student life at Berkeley. All the while, the Social Media Leads use all this content to engage with the international community at Berkeley and create connections across the world. 
                                 <br /> <br />
                             </p>
                         </div>
@@ -65,8 +64,8 @@
                             <i class="fa fa-twitter hi-icon"></i>
                         </a>
                         <div class="features-text">
-                            <h6>Collaborative Events Committee</h6>
-                            <p>The Collaborative Events Committee strives towards nourishing the ISAB General Membership Program. From organizing various outings to managing the family system, you will have the chance to turn your crazily fun ideas into reality. Whether you like writing or managing events, fostering diversity or forming close relationships, join and let your creativity shine!</p>
+                            <h6>Social Committee</h6>
+                            <p>The Social Committee coordinates events that focus on maintaining a fun, social atmosphere of ISAB throughout the semester. The committee will organize activities that bring together both the core and general members and create a welcoming and family-like community. We will plan activities such as ISAB families, iDates, various socials whilst also brainstorming new ways to connect everyone.</p>
                         </div>
                     </div>
 
@@ -158,238 +157,188 @@
             <p class="subheading text-center">committee chairs</p>
             </div>
         </div>
-
-
-
-
-        <div class="row team-row"> <!-- beginning of row 1-->
-
-            <div id="leader1" class="col-md-3 col-sm-6 team-wrap">
+            <div class="row team-row">
+              <div id="leader5" class="col-md-3 col-sm-6 team-wrap">
                 <div class="team-member text-center">
                     <div class="team-img">
-                    <img src="{% static "img/people/COPTER2020.jpg" %}" alt="Copter pic" >
-                    <div class="overlay">
-                        <div class="team-details text-center">
-                        <p>
-                            Contact
-                        </p>
-                        <div class="socials mt-20">
-                            <a href="https://www.linkedin.com/">
-                            <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:copterpatcharapol@berkeley.edu">
-                            <i class="fa fa-envelope"></i>
-                            </a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <h6 class="team-title">Copter Lee</h6>
-                    <span>Associate of Operations</span>
-                </div>
-            </div>
-
-
-
-
-
-            <div id="leader2" class="col-md-3 col-sm-6 team-wrap">
-                <div class="team-member text-center">
-                    <div class="team-img">
-                    <img src="{% static "img/people/VIVA2020.jpg" %}" alt="Viva pic">
-                    <div class="overlay">
+                      <img src="{% static "img/isab_logo_black.png" %}" alt="Shun photo">
+                      <div class="overlay">
                         <div class="team-details text-center">
                           <p>
-                              Contact
+                            Contact
                           </p>
                           <div class="socials mt-20">
-                              <a href="https://www.linkedin.com/">
+                            <a href="https://www.linkedin.com/in/qfan/">
                               <i class="fa fa-linkedin"></i>
-                              </a>
-                              <a href="mailto:vivasheth@berkeley.edu">
+                            </a>
+                            <a href="mailto:queenie.fan@berkeley.edu">
                               <i class="fa fa-envelope"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin"></i>
                               </a>
+                              <a href="mailto:zeynepsezer@berkeley.edu">
+                                <i class="fa fa-envelope"></i>
+                              </a>
+                            
                           </div>
                         </div>
-                    </div>
-                    </div>
-                    <h6 class="team-title">Viva Sheth</h6>
-                    <span>Collaborative Events Chair</span>
-                </div>
-            </div>
-
-
-
-  
-
-
-            <div id="leader3" class="col-md-3 col-sm-6 team-wrap">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                    <img src="{% static "img/people/SARAH2020.jpg" %}" alt="Sarah pic">
-                    <div class="overlay">
-                        <div class="team-details text-center">
-                        <p>
-                            Contact
-                        </p>
-                        <div class="socials mt-20">
-                            <a href="https://www.linkedin.com/">
-                            <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:sarah2002@berkeley.edu">
-                            <i class="fa fa-envelope"></i>
-                            </a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <h6 class="team-title">Sarah Kamel</h6>
-                    <span>External Events Chair</span>
-                </div>
-            </div>
-
-
-
-
-            <div id="leader5" class="col-md-3 col-sm-6 team-wrap">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                    <img src="{% static "img/people/MAE2020.jpg" %}" alt="Mae pic">
-                    <div class="overlay">
-                        <div class="team-details text-center">
-                        <p>
-                            Contact
-                        </p>
-                        <div class="socials mt-20">
-                            <a href="https://www.linkedin.com/">
-                            <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:ziyue.zheng@berkeley.edu">
-                            <i class="fa fa-envelope"></i>
-                            </a>
-                        </div> 
-                        </div>
-                    </div>
-                    </div>
-                    <h6 class="team-title">Mae Zheng</h6>
-                    <span>International Programs Chair</span>
-                </div>
-            </div>
-
-
-        </div> <!-- end of row 1-->
-
-
-
-        <div class="row heading">
-            <div class="col-md-6 col-md-offset-3">
-            </div>
-        </div>
-
-        <div class="row team-row text-center "> <!-- begin row 3 content -->
-
-
-          <div id="leader6" class="col-md-3 col-sm-6 team-wrap">
-              <div class="team-member last text-center">
-                  <div class="team-img">
-                  <img src="{% static "img/people/ANNA2020.jpg" %}" alt="Anna pic">
-                  <div class="overlay">
-                      <div class="team-details text-center">
-                      <p>
-                          Contact
-                      </p>
-                      <div class="socials mt-20">
-                          <a href="https://www.linkedin.com/">
-                          <i class="fa fa-linkedin"></i>
-                          </a>
-                          <a href="mailto:annasmith@berkeley.edu">
-                          <i class="fa fa-envelope"></i>
-                          </a>
                       </div>
-                      </div>
-                  </div>
-                  </div>
-                  <h6 class="team-title">Anna Smith</h6>
-                  <span>Marketing Chair</span>
+                    </div>
+                    <h6 class="team-title">Queenie Fan & Zeynep Sezer</h6>
+                    <span>Social Media Leads</span>
+                </div>
               </div>
+              <div id="leader6" class="col-md-3 col-sm-6 team-wrap">
+                  <div class="team-member text-center">
+                    <div class="team-img">
+                      <img src="{% static "img/isab_logo_black.png" %}" alt="Shun photo">
+                      <div class="overlay">
+                        <div class="team-details text-center">
+                          <p>
+                            Contact
+                          </p>
+                          <div class="socials mt-20">
+                            <a href="">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:zahrapoonevala@berkeley.edu">
+                              <i class="fa fa-envelope"></i>
+                            </a>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="team-title">Zahra Poonevala</h6>
+                    <span>Social Lead</span>
+                  </div>
+              </div>
+              <div id="leader7" class="col-md-3 col-sm-6 team-wrap">
+                  <div class="team-member last text-center">
+                    <div class="team-img">
+                      <img src="{% static "img/isab_logo_black.png" %}" alt="Shun photo">
+                      <div class="overlay">
+                        <div class="team-details text-center">
+                          <p>
+                            Contact
+                          </p>
+                          <div class="socials mt-20">
+                            <a href="https://www.linkedin.com/in/aakarsh-kankaria-5375a8207/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:akankaria@berkeley.edu">
+                              <i class="fa fa-envelope"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="team-title">Aakarsh Kankaria</h6>
+                    <span>Professional Lead</span>
+                  </div>
+                </div>
+              <div id="leader8" class="col-md-3 col-sm-6 team-wrap">
+                  <div class="team-member last text-center">
+                    <div class="team-img">
+                      <img src="{% static "img/isab_logo_black.png" %}" alt="Shun photo">
+                      <div class="overlay">
+                        <div class="team-details text-center">
+                          <p>
+                            Contact
+                          </p>
+                          <div class="socials mt-20">
+                            <a href="https://www.linkedin.com/in/sarp-kurtoglu-20a3011b4/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:sarpdkurtoglu@berkely.edu">
+                              <i class="fa fa-envelope"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="team-title">Sarp Dora Kurtoglu</h6>
+                    <span>Mentor/Mentee Lead</span>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="row team-row">
+              <div id="leader9" class="col-md-3 col-sm-6 team-wrap">
+                <div class="team-member text-center">
+                    <div class="team-img">
+                      <img src="{% static "img/isab_logo_black.png" %}" alt="Shun photo">
+                      <div class="overlay">
+                        <div class="team-details text-center">
+                          <p>
+                            Contact
+                          </p>
+                          <div class="socials mt-20">
+                            <a href="">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:annasmith@berkeley.edu">
+                              <i class="fa fa-envelope"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="team-title">Anna Smith </h6>
+                    <span>Historian Lead</span>
+                </div>
+              </div>
+              <div id="leader10" class="col-md-3 col-sm-6 team-wrap">
+                  <div class="team-member text-center">
+                    <div class="team-img">
+                      <img src="{% static "img/isab_logo_black.png" %}" alt="Shun photo">
+                      <div class="overlay">
+                        <div class="team-details text-center">
+                          <p>
+                            Contact
+                          </p>
+                          <div class="socials mt-20">
+                            <a href="https://www.linkedin.com/in/ergunacikoz/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:ergunackz@berkeley.edu">
+                              <i class="fa fa-envelope"></i>
+                            </a>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="team-title">Ergun Acikoz</h6>
+                    <span>Tech Lead</span>
+                  </div>
+              </div>
+              <div id="leader11" class="col-md-3 col-sm-6 team-wrap">
+                  <div class="team-member last text-center">
+                    <div class="team-img">
+                      <img src="{% static "img/isab_logo_black.png" %}" alt="Shun photo">
+                      <div class="overlay">
+                        <div class="team-details text-center">
+                          <p>
+                            Contact
+                          </p>
+                          <div class="socials mt-20">
+                            <a href="https://www.linkedin.com/in/beril-g%C3%BCr-83188a156/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:beril.gur@berkeley.edu">
+                              <i class="fa fa-envelope"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class="team-title">Beril Gur</h6>
+                    <span>External Lead</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-
-            <div id="leader7" class="col-md-3 col-sm-6 team-wrap">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                    <img src="{% static "img/people/VEDANT2020.jpg" %}" alt="Vedant pic">
-                    <div class="overlay">
-                        <div class="team-details text-center">
-                        <p>
-                            Contact
-                        </p>
-                        <div class="socials mt-20">
-                            <a href="https://www.linkedin.com/">
-                            <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:vedant_kajaria@berkeley.edu">
-                            <i class="fa fa-envelope"></i>
-                            </a>
-                        </div> 
-                        </div>
-                    </div>
-                    </div>
-                    <h6 class="team-title">Vedant Kajaria</h6>
-                    <span>Social Chair</span>
-                </div>
-            </div>
-
-            <div id="leader9" class="col-md-3 col-sm-6 team-wrap">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                    <img src="{% static "img/people/ANNABEL2020.jpg" %}" alt="Annabel pic">
-                    <div class="overlay">
-                        <div class="team-details text-center">
-                        <p>
-                            Contact
-                        </p>
-                        <div class="socials mt-20">
-                            <a href="https://www.linkedin.com/">
-                            <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:annabel__teagan@berkeley.edu">
-                            <i class="fa fa-envelope"></i>
-                            </a>
-                        </div> 
-                        </div>
-                    </div>
-                    </div>
-                    <h6 class="team-title">Annabel Davis</h6>
-                    <span>Historian Chair</span>
-                </div>
-            </div>
-
-            <div id="leader8" class="col-md-3 col-sm-6 team-wrap">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                    <img src="{% static "img/people/ELAINE2020.jpg" %}" alt="Elaine pic">
-                    <div class="overlay">
-                        <div class="team-details text-center">
-                        <p>
-                            Contact
-                        </p>
-                        <div class="socials mt-20">
-                            <a href="https://www.linkedin.com/in/elaine-jiyoun-kim-00885b149/">
-                            <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:elaine.jy.kim@berkeley.edu">
-                            <i class="fa fa-envelope"></i>
-                            </a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <h6 class="team-title">Elaine Kim</h6>
-                    <span>Technology Chair</span>
-                </div>
-            </div>
-        </div> <!-- end of row 3 content-->
 
 
 
