@@ -1,43 +1,85 @@
-{% extends 'public/base.html' %} {% load static %} {% block title %}About{% endblock %}
+{% extends 'public/base.html' %} {% load static %} {% block title %}News{% endblock %} {% block content %}
+
+
 <section class="page-title style-2">
   <div class="container relative clearfix">
-    <div class="title-holder">
-      <div class="title-text">
-        <h1>About Us</h1>
-        <ol class="breadcrumb">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li class="active">
-            About Us
-          </li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Image -->
-<div class="section-wrap-mp pt-0 pb-0">
-  <div class="entry-img">
-    <img src="{% static "img/black.jpg" %}" alt="core2019_retreatGroup">
-  </div>
-</div>
-
-<!-- Text -->
-<section class="section-wrap-mp">
-  <div class="container">
-    <div class="row mt-minus-30">
-      <div class="col-sm-12">
-        <div class="about-description mt-30">
-          <h4>Our Story</h4>
-          <p>
-          ISAB is the largest international students organization on UC Berkeley campus. It was established in 2009 and was nominated as an outstanding student organization in 2010. ISAB provides a positive intellectual and social atmosphere for students from diverse backgrounds. We host numerous events to promote awareness of international culture to the campus community, whilst strengthening Berkeley's multicultural community. ISAB has hundreds of general members, and along with our officer team, we have 8 core committees.
-          </p>
-          ISAB’s events hosted over each year include but are not limited to: iLink (Professional Networking event designed solely for international students), retreats with ISAB alumni and current members, World Food Fair, Speaker Series, Meet the Bears (International Students Orientation), and General Members’ Bowling Night.
-          </p>
+      <div class="title-holder">
+        <div class="title-text">
+          <h1>What's new in ISAB?</h1>
+          <ol class="breadcrumb">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li class="active">
+              News
+            </li>
+          </ol>
         </div>
       </div>
     </div>
-  </div>
 </section>
+
+
+<section class="section-wrap-mp features light pt-140">
+  <div class="container">
+
+    
+
+      <!-- Intro -->
+      <div class="row heading">
+          <div class="col-md-6 col-md-offset-3">
+              <h2 class="text-center bottom-line">Programs</h2>
+          </div>
+      </div>
+      
+
+
+                <!-- Text -->
+      <section class="row heading">
+          <div class="text-center bottom-line">
+            <div class="col-sm-12">
+                <h4>IT’S BACK: THE ISAB Mentor/mentee program!</h4>
+            </div>
+          </div>
+      </section>
+
+
+
+      <p class="intro-text mb-60">
+              <b>Purpose</b> 
+              <br>IT’S BACK: The ISAB mentorship program is here to support you as you grow both professionally and personally! We will pair you with a mentor/mentee who will help you realize both professional and personal development goals, as well as build social connections within the international student community at Berkeley. <br/>
+              <br/><b>Sign Up!</b>
+              <br>  For Fall 2021: You can access the sign up form <a href="https://forms.gle/8TnLWEhrKEkuazeb6"> here</a>! Please try to apply by 10/29/2021, as that is our first review date for pairings.<br/>          
+          </p>
+      <div class="col-sm-10 col-sm-offset-1 wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+            <img src="{% static "img/fall21/mentor_mentee.jpg" %}" alt="2021 officers" />
+            <div class="row heading">
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+        <img src="{% static "img/fall21/rsz_aziz_and_beril.jpg" %}" alt="2021 officers" />
+        <div class="row heading">
+      </div>
+      <p class="intro-text mb-60">
+          <b>Beril</b> 
+        <br>My mentor Aziz helped me throughout my freshman year in everything related to my academic decisions. Besides all of that, now he’s my neighbor and club mate as he helped me find housing and gave me advice on extracurriculars! I can say that he is the architect of my social, professional and academic life here in college!<br/>
+        <br/><b>Aziz</b>
+        <br>As an incoming international freshman, I knew nothing and no one coming into Berkeley. My mentors helped me create those first friendships and a foundation that I could carry with me going forward as an undergrad. Now as an upperclassman, it was my turn to pay it forward. And to my surprise, I found that mentoring Beril was even more rewarding and impactful than I ever anticipated! I came out of this program with lots of skills learned, memories made, and a friend for life.<br/>          
+        </p>
+      </div>
+
+      
+
+</section>
+      
+
+    
+
+    
+
+  
+
+{% endblock %}
+
+
+
+
